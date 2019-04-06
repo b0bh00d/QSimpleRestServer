@@ -3,6 +3,7 @@
 #include "restserver.h"
 #include "restrequest.h"
 
+EXPORT_API
 RESTServer::RESTServer(QObject *parent) : QObject(parent)
 {
     connect( &m_HttpServer, SIGNAL(newRequest(QHttpRequest*,QHttpResponse*)), this, SLOT( newRequest(QHttpRequest*,QHttpResponse*) ) );

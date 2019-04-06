@@ -1,13 +1,14 @@
-#ifndef SAZMARESTSERVER_H
-#define SAZMARESTSERVER_H
+#pragma once
 
 #include <QObject>
+
+#include "restlib.h"
 #include "http/qhttpserver.h"
 #include "http/qhttprequest.h"
 #include "http/qhttpresponse.h"
 #include "restrequestlistener.h"
 
-class RESTServer : public QObject
+class EXPORT_API RESTServer : public QObject
 {
     Q_OBJECT
 public:
@@ -24,7 +25,4 @@ private:
     QHttpServer m_HttpServer;
 
     QList<RESTRequestListener*> m_Listener;
-
 };
-
-#endif // SAZMARESTSERVER_H

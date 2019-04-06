@@ -1,6 +1,3 @@
-
-QT += core network
- 
 SOURCES += \
     $$PWD/src/http/qhttpconnection.cpp \
     $$PWD/src/http/qhttprequest.cpp \
@@ -23,7 +20,5 @@ HEADERS += \
     $$PWD/src/restserver.h \
     $$PWD/src/restrequest.h \
     $$PWD/src/restrequestlistener.h \
-    $$PWD/src/restresult.h
-
-
-INCLUDEPATH += $$PWD/src
+    $$PWD/src/restresult.h \
+    $$PWD/src/restlib.h

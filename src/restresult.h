@@ -1,9 +1,10 @@
-#ifndef RESTRESULT_H
-#define RESTRESULT_H
+#pragma once
 
 #include <QObject>
 
-class RESTResult : public QObject
+#include "restlib.h"
+
+class EXPORT_API RESTResult : public QObject
 {
     Q_OBJECT
 public:
@@ -27,5 +28,3 @@ private:
     QByteArray m_Data;
 
 };
-
-#endif // RESTRESULT_H

@@ -1,15 +1,14 @@
-#ifndef RESTREQUEST_H
-#define RESTREQUEST_H
+#pragma once
 
 #include <QObject>
 
+#include "restlib.h"
 #include "http/qhttprequest.h"
 #include "http/qhttpresponse.h"
 #include "restrequestlistener.h"
-
 #include "restresult.h"
 
-class RESTRequest : public QObject
+class EXPORT_API RESTRequest : public QObject
 {
     Q_OBJECT
 public:
@@ -34,5 +33,3 @@ private:
 
     RESTRequestListener * m_Listener;
 };
-
-#endif // RESTREQUEST_H

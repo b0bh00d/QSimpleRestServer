@@ -1,10 +1,11 @@
-#ifndef RESTREQUESTLISTENER_H
-#define RESTREQUESTLISTENER_H
+#pragma once
 
 #include <QObject>
 #include <QMap>
 
-class RESTRequestListener : public QObject
+#include "restlib.h"
+
+class EXPORT_API RESTRequestListener : public QObject
 {
     Q_OBJECT
 public:
@@ -17,7 +18,4 @@ public slots:
 
 private:
     QString m_Resource;
-
 };
-
-#endif // RESTREQUESTLISTENER_H
