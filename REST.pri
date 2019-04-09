@@ -7,7 +7,7 @@ SOURCES += \
     $$PWD/src/restserver.cpp \
     $$PWD/src/restrequest.cpp \
     $$PWD/src/restrequestlistener.cpp \
-    $$PWD/src/restresult.cpp
+    $$PWD/src/restresult.cpp \
 
 HEADERS += \
     $$PWD/src/http/qhttpconnection.h \
@@ -21,4 +21,4 @@ HEADERS += \
     $$PWD/src/restrequest.h \
     $$PWD/src/restrequestlistener.h \
     $$PWD/src/restresult.h \
-    $$PWD/src/restlib.h
+    $$PWD/src/restlib.h \

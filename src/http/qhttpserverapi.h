@@ -25,6 +25,10 @@
 
 #include <QtGlobal>
 
+#ifdef Q_OS_WIN
+#define QHTTPSERVER_API __declspec( dllexport )
+#else
 #define QHTTPSERVER_API
+#endif
 
 #endif
