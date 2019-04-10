@@ -20,6 +20,7 @@ public:
     QByteArray postData();
     RESTResult * result(){ return &m_Result; }
     QString host();
+    QString header(const QString& name);
 
 signals:
 

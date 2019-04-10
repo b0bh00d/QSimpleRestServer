@@ -47,6 +47,11 @@ QString RESTRequest::host()
     return m_Request->remoteAddress();
 }
 
+QString RESTRequest::header(const QString& name)
+{
+    return m_Request->header(name);
+}
+
 void RESTRequest::finished()
 {
     const QMetaObject * meta = m_Listener->metaObject();
