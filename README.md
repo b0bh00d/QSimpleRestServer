@@ -1,6 +1,6 @@
 # QSimpleRestServer (shared library)
 
-This is a clone of the original QSimpleRestServer, with the following modifications:
+This is a clone of the original QSimpleRestServer, with the following modifications (so far):
 
 * Adds a .pro file to build as a shared library
 * Exposes some critical QHttpRequest methods up the food chain to servers (e.g., headers())
