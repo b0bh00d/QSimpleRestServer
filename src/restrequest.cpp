@@ -52,6 +52,11 @@ QString RESTRequest::header(const QString& name)
     return m_Request->header(name);
 }
 
+void RESTRequest::setHeader(const QString &field, const QString &value)
+{
+    m_Response->setHeader(field, value);
+};
+
 void RESTRequest::finished()
 {
     const QMetaObject * meta = m_Listener->metaObject();

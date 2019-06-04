@@ -21,6 +21,7 @@ public:
     RESTResult * result(){ return &m_Result; }
     QString host();
     QString header(const QString& name);
+    void setHeader(const QString &field, const QString &value);
 
 signals:
 
